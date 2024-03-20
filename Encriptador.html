@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="estilo-encriptador.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <main>
+        <img class="logo" src="Logo.png" alt="logo Alura">  
+        <div class="centrar">
+            <div class="cuadroTexto">
+              <textarea id="areaTexto"  class="area-texto" placeholder="Ingrese el texto aquí" style="resize: none;"></textarea>
+            </div>
+            <div class="cuadroImagen">               
+                <textarea class="cuadroEncriptado" id="cuadroEncriptado" readonly></textarea>                                
+            </div>
+        </div>
+            <div class="advertencia">
+            <span><img class="signoAdvertencia" src="exclamation-circle-fill.png" alt="!!">   Solo se aceptan letras minúsculas</span>
+        </div>
+        <div class="botones">    
+            <button type="button" class="boton1" onclick="botonEncriptar(); leerMayuscula();">Encriptar</button>
+            <button type="button" class="boton2" onclick="botonDesencriptar(); leerMayuscula();">Desencriptar</button>
+            <button type="button" class="boton3" onclick="reset()">Reset</button>
+        </div>
+    </main>    
+
+
+    <script src="Encriptador.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+         
+</body>
+</html>
+
